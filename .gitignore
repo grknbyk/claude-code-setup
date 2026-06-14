@@ -1,0 +1,11 @@
+# Machine-local / per-developer (never commit)
+.claude/settings.local.json
+.impeccable/config.local.json
+
+# Runtime caches & generated data (regenerated automatically)
+.claude/mcp-memory.json
+.impeccable/hook.cache.json
+.claude/skills/.impeccable/
+
+# Node
+node_modules/
