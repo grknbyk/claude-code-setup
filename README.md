@@ -9,7 +9,7 @@ Repo: https://github.com/grknbyk/claude-code-setup
 git clone https://github.com/grknbyk/claude-code-setup.git
 ```
 
-Last updated: 2026-06-15
+Last updated: 2026-06-20
 
 ---
 
@@ -55,10 +55,10 @@ Project-scoped. Installed via the `skills` CLI
 - Install: `npx -y skills add mattpocock/skills --skill grill-me --agent claude-code`
 - Stress-tests an existing plan (relentless one-at-a-time Q&A).
 
-### caveman
-- Source: https://github.com/mattpocock/skills/tree/main/skills/productivity/caveman
-- Install: `npx -y skills add mattpocock/skills --skill caveman --agent claude-code`
-- Ultra-compressed output mode (~75% fewer tokens).
+### ponytail
+- Source: https://github.com/DietrichGebert/ponytail.git
+- Install: `npx -y skills add DietrichGebert/ponytail --skill ponytail --agent claude-code`
+- Lazy-senior-dev mode — forces the simplest/shortest solution that actually works (YAGNI, stdlib over deps, native over libraries). Intensity levels: `lite | full (default) | ultra`. Reinforces the karpathy-guidelines / `CLAUDE.md` philosophy. (MIT)
 
 ### skill-creator
 - Source: https://github.com/anthropics/skills.git
@@ -180,7 +180,7 @@ We deliberately avoid the plugin (`/plugin install …`) because it installs **g
 npx -y skills add mksglu/context-mode --skill context-mode --agent claude-code
 npx -y skills add forrestchang/andrej-karpathy-skills --skill karpathy-guidelines --agent claude-code
 npx -y skills add mattpocock/skills --skill grill-me --agent claude-code
-npx -y skills add mattpocock/skills --skill caveman --agent claude-code
+npx -y skills add DietrichGebert/ponytail --skill ponytail --agent claude-code
 npx -y skills add anthropics/skills --skill skill-creator --agent claude-code
 npx -y skills add mattpocock/skills --skill handoff --agent claude-code   # then apply the §1 diff
 npx impeccable skills install
